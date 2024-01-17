@@ -90,6 +90,12 @@ header > div {
   z-index: 10000;
 }
 
+.hamburger_icon {
+  display: none;
+  font-size: 40px;
+  color: var(--navbar-link);
+}
+
 .container,
 .hr-container,
 section {
@@ -792,6 +798,7 @@ footer .container {
 
 .socials > div {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.6rem;
 }
 
@@ -830,6 +837,7 @@ footer .container {
   border: 0.5px solid black;
   border-radius: var(--btn-border-radius);
   display: flex;
+  margin-top: 1.7rem;
   justify-content: space-between;
 }
 
@@ -851,13 +859,17 @@ hr {
   border: 0.5px solid #1e1e1e;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1280px) {
+  .container,
+  .hr-container,
+  section {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
   header {
     position: relative;
-  }
-
-  .container {
-    margin: 0 20px;
   }
 
   .nav-bar {
@@ -875,8 +887,7 @@ hr {
   }
 
   .hamburger_icon {
-    font-size: 40px;
-    color: var(--navbar-link);
+    display: block;
   }
 
   .hero_container {
@@ -924,5 +935,31 @@ hr {
   .col-2 p {
     font-size: 1.3rem;
     padding-left: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .logo-section {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .logo-section,
+  .newsletter {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
