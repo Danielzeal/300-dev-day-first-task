@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *,
 *::after,
@@ -676,7 +677,7 @@ section {
   background-color: var(--background);
 }
 .right-bm {
-  color: #5F6368;
+  color: #5f6368;
   font-family: var(--body-font);
   font-size: 1rem;
   font-style: normal;
@@ -848,4 +849,80 @@ hr {
 .newsletter button {
   border-radius: 8px;
   border: 0.5px solid #1e1e1e;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    position: relative;
+  }
+
+  .container {
+    margin: 0 20px;
+  }
+
+  .nav-bar {
+    position: absolute;
+    background-color: var(--foreground);
+    width: 100%;
+    top: 100%;
+    padding: 2px 0 20px;
+    display: none;
+  }
+
+  .nav-bar,
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .hamburger_icon {
+    font-size: 40px;
+    color: var(--navbar-link);
+  }
+
+  .hero_container {
+    height: 100%;
+    padding-bottom: 30px;
+    flex-direction: column-reverse;
+  }
+  .hero_img img {
+    width: 200%;
+  }
+
+  .hero_text {
+    width: 100%;
+  }
+  .hero_socials {
+    margin-top: 20px;
+  }
+
+  .hero_socials span {
+    margin: 0 4px;
+    font-size: 1.3rem;
+  }
+
+  .hero_heading h1 {
+    font-size: 4.4rem;
+    text-align: center;
+  }
+  .hero_paragraph p {
+    text-align: center;
+  }
+  .hero_button button {
+    width: 100%;
+    margin: 13px 0;
+    padding: 15px 20px;
+  }
+
+  .banner-container {
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 1rem;
+  }
+  .col-1 h1 {
+    font-size: 2.2rem;
+  }
+  .col-2 p {
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
 }
