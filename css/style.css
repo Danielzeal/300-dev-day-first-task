@@ -533,11 +533,13 @@ section {
 
 /* Join Amazing Team Banner */
 
-.join_amazing-students{
-  padding: 0 0 100px;
-
+.team {
+  margin-top: 2rem;
 }
 
+.join_amazing-students{
+  padding: 0 0 100px;
+}
 
 .join_amazing-students .join-banner{
   background: #000;
@@ -551,7 +553,6 @@ section {
 }
 
 .join-banner h2{
-  
   margin-bottom: 30px;
   color: #fff;
   font-size: 57.40px;
